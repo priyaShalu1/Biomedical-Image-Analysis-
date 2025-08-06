@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biomedical Image Analysis</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for a futuristic and clean look -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Biomedical Image Analysis</h1>
+
+        <div class="controls">
+            <input type="file" id="imageUpload" accept="image/*">
+            <button id="processButton" disabled>Process Image</button>
+            <button id="saveButton" disabled>Save Results</button>
+        </div>
+
+        <div class="image-grid">
+            <div class="image-card">
+                <h3>Original Image</h3>
+                <canvas id="originalCanvas" width="256" height="256"></canvas>
+                <p class="placeholder-text" id="originalPlaceholder">No image selected</p>
+            </div>
+            <div class="image-card">
+                <h3>Thresholded Image</h3>
+                <canvas id="thresholdedCanvas" width="256" height="256"></canvas>
+                <p class="placeholder-text" id="thresholdedPlaceholder">Process image to see result</p>
+            </div>
+            <div class="image-card">
+                <h3>Foreground Image</h3>
+                <canvas id="foregroundCanvas" width="256" height="256"></canvas>
+                <p class="placeholder-text" id="foregroundPlaceholder">Process image to see result</p>
+            </div>
+            <div class="image-card">
+                <h3>Background Image</h3>
+                <canvas id="backgroundCanvas" width="256" height="256"></canvas>
+                <p class="placeholder-text" id="backgroundPlaceholder">Process image to see result</p>
+            </div>
+        </div>
+
+        <div class="results">
+            <p id="probabilityLabel">Probability of Affection: <span>N/A</span></p>
+            <p id="errorMessage" class="error-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
