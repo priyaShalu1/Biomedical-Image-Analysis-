@@ -30,7 +30,8 @@ Give the images from images.zip file after unzipping it.
 ##Sample Result
 Input image -> Grayscale -> Binarized
 Binarized images will be saved in the output folder.
-<img width="940" height="701" alt="image" src="https://github.com/user-attachments/assets/2ba93dde-b9d7-440e-9d27-05a738ccfa4e" />
+<img width="525" height="694" alt="Screenshot 2025-08-06 150721" src="https://github.com/user-attachments/assets/92962bdd-101b-4299-8b89-75a434a36e25" />
+
 
  
 
